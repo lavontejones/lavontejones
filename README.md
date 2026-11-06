@@ -40,58 +40,15 @@ Typical solutions include:
 
 ## Selected Systems
 
-These repositories are functional portfolio projects built with synthetic data. They are designed to demonstrate the underlying engineering, business logic, validation, and implementation approach rather than simulated client results.
+### Public Implementations
 
-### Document Production Engine
+These repositories contain source code and examples you can inspect without signing in. The examples use synthetic or fictional data and illustrate the engineering, business rules, and validation.
 
-**Structured information → controlled document generation → validation → finished deliverables**
-
-[View repository →](https://github.com/lavontejones/document-engine)
-
-A deterministic document-generation system that produces **DOCX, PDF, XLSX, and HTML** outputs from structured content and reusable design rules.
-
-Demonstrates:
-
-- multi-format document generation
-- reusable document components
-- spreadsheet formulas, tables, charts, and validation
-- automated render and layout checks
-- version-controlled output
-- machine-readable build manifests
-- document QA workflows
-
----
-
-### Customer Data Reconciliation Engine
-
-**CRM data + accounting data → identity resolution → customer master → review queue**
-
-[View repository →](https://github.com/lavontejones/customer-data-reconciliation-engine)
-
-A production-style reconciliation engine built around **1,000 synthetic CRM records and 1,000 synthetic accounting records**.
-
-The system validates, normalizes, compares, matches, and reconciles customer records while preserving source evidence and uncertain cases for human review.
-
-Demonstrates:
-
-- data validation and profiling
-- duplicate detection
-- deterministic and fuzzy matching
-- conflict resolution
-- confidence scoring
-- human-review routing
-- data lineage
-- audit trails
-- reproducible outputs
-- automated testing
-
----
-
-### API Integration Demo
+#### API Integration Demo
 
 **Inbound request → validation → routing → storage → CRM-ready payload → webhook**
 
-[View repository →](https://github.com/lavontejones/api-integration-demo)
+[View API Integration Demo repository](https://github.com/lavontejones/api-integration-demo)
 
 A working reference implementation of a small-business intake and integration system.
 
@@ -110,13 +67,11 @@ Demonstrates:
 - logging and auditing
 - integration testing
 
----
-
-### Cash Flow Forecasting
+#### Cash Flow Forecasting
 
 **Business assumptions → scenarios → monthly operating forecast → cash outlook**
 
-[View repository →](https://github.com/lavontejones/cash-flow-forecasting)
+[View Cash Flow Forecasting repository](https://github.com/lavontejones/cash-flow-forecasting)
 
 A functional FP&A system for building operating scenarios and tracing business assumptions through revenue, collections, expenses, and ending cash.
 
@@ -132,13 +87,11 @@ Demonstrates:
 - reproducible financial calculations
 - automated validation
 
----
-
-### Executive KPI Dashboard
+#### Executive KPI Dashboard
 
 **Operating data → business metrics → management dashboard**
 
-[View repository →](https://github.com/lavontejones/kpi-dashboard)
+[View Executive KPI Dashboard repository](https://github.com/lavontejones/kpi-dashboard)
 
 A management-reporting dashboard built around a fictional service business.
 
@@ -155,33 +108,11 @@ Demonstrates:
 - Streamlit application development
 - automated testing
 
----
-
-### n8n Automation Workflows
-
-**Business event → validation → business rules → decision → controlled output**
-
-[View repository →](https://github.com/lavontejones/n8n-workflows)
-
-A collection of synthetic n8n workflow demonstrations covering common small-business operating processes.
-
-Current examples include:
-
-- lead intake and scoring
-- weekly KPI reporting
-- invoice follow-up logic
-- CRM duplicate detection
-- operations health monitoring
-
-The workflows are intentionally separated from live credentials and production systems so their decision logic can be inspected safely.
-
----
-
-### FP&A Toolkit
+#### FP&A Toolkit
 
 **Budget + actuals → variance analysis → forecast → management report**
 
-[View repository →](https://github.com/lavontejones/fpa-toolkit)
+[View FP&A Toolkit repository](https://github.com/lavontejones/fpa-toolkit)
 
 A lightweight management-planning toolkit for comparing budget and actual performance and producing a driver-based 12-month cash outlook.
 
@@ -193,6 +124,75 @@ Demonstrates:
 - scenario assumptions
 - management reporting
 - deterministic financial calculations
+
+---
+
+### Private Project Summaries
+
+These summaries describe projects with private repositories. The related public examples come from separate implementations. All examples use synthetic data and illustrate technical behavior.
+
+#### Document Production Engine
+
+**Structured information → controlled document generation → validation → finished deliverables**
+
+**Private repository**
+
+A deterministic document-generation system that produces **DOCX, PDF, XLSX, and HTML** outputs from structured content and reusable design rules.
+
+**Technical scope**
+
+- multi-format document generation
+- reusable document components
+- spreadsheet formulas, tables, charts, and validation
+- automated render and layout checks
+- version-controlled output
+- machine-readable build manifests
+- document QA workflows
+
+The FP&A Toolkit generates an HTML management report from fictional inputs. See the [walkthrough](https://github.com/lavontejones/fpa-toolkit/blob/main/docs/DEMO.md) and [sample HTML report source](https://github.com/lavontejones/fpa-toolkit/blob/main/docs/sample-report.html).
+
+#### Customer Data Reconciliation Engine
+
+**CRM data + accounting data → identity resolution → customer master → review queue**
+
+**Private repository**
+
+A reconciliation engine built around **1,000 synthetic CRM records and 1,000 synthetic accounting records**.
+
+The system validates, normalizes, compares, matches, and reconciles customer records while preserving source evidence and uncertain cases for human review.
+
+**Technical scope**
+
+- data validation and profiling
+- duplicate detection
+- deterministic and fuzzy matching
+- conflict resolution
+- confidence scoring
+- human-review routing
+- data lineage
+- audit trails
+- reproducible outputs
+- automated testing
+
+Related public examples include [duplicate checks and uncertain customer matches in the API Integration Demo](https://github.com/lavontejones/api-integration-demo/blob/main/docs/architecture.md) and [synthetic bank reconciliation and exception review in the Finance Operations demo](https://github.com/lavontejones/finance-operations-intelligence-engine/blob/main/docs/case-study.md).
+
+#### n8n Automation Workflows
+
+**Business event → validation → business rules → decision → controlled output**
+
+**Private repository**
+
+A collection of synthetic n8n workflow demonstrations covering common small-business operating processes.
+
+Current examples include:
+
+- lead intake and scoring
+- weekly KPI reporting
+- invoice follow-up logic
+- CRM duplicate detection
+- operations health monitoring
+
+See the Finance Operations demo’s [inactive n8n template for a synthetic review task](https://github.com/lavontejones/finance-operations-intelligence-engine/blob/main/n8n/finance-review-gate.json).
 
 ---
 
@@ -361,13 +361,11 @@ Where a repository models a production workflow, the documentation identifies th
 
 <div align="center">
 
-### Selected Portfolio
+### Public Portfolio
 
-[Document Engine](https://github.com/lavontejones/document-engine) ·
-[Data Reconciliation](https://github.com/lavontejones/customer-data-reconciliation-engine) ·
-[API Integration](https://github.com/lavontejones/api-integration-demo) ·
+[API Integration Demo](https://github.com/lavontejones/api-integration-demo) ·
 [Cash Flow Forecasting](https://github.com/lavontejones/cash-flow-forecasting) ·
-[KPI Dashboard](https://github.com/lavontejones/kpi-dashboard) ·
-[n8n Workflows](https://github.com/lavontejones/n8n-workflows)
+[Executive KPI Dashboard](https://github.com/lavontejones/kpi-dashboard) ·
+[FP&A Toolkit](https://github.com/lavontejones/fpa-toolkit)
 
 </div>
